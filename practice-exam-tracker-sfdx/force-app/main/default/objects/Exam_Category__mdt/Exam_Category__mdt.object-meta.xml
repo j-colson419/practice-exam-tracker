@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Represents a category of questions on the related exam type. The category names and weights are based on the certification exam guides provided by Salesforce. The weight represents the portion of questions in the exam that fall into this category.</description>
+    <label>Exam Category</label>
+    <pluralLabel>Exam Categories</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Associate_Name__c</fullName>
+    <externalId>false</externalId>
+    <formula>Associate__r.FirstName + &quot; &quot; + Associate__r.LastName</formula>
+    <label>Associate Name</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

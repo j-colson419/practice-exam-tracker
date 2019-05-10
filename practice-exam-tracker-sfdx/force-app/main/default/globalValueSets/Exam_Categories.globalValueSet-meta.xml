@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Organizational Setup</fullName>
+        <default>false</default>
+        <label>Organizational Setup</label>
+    </customValue>
+    <customValue>
+        <fullName>User Setup</fullName>
+        <default>false</default>
+        <label>User Setup</label>
+    </customValue>
+    <customValue>
+        <fullName>Security and Access</fullName>
+        <default>false</default>
+        <label>Security and Access</label>
+    </customValue>
+    <customValue>
+        <fullName>Standard and Custom Objects</fullName>
+        <default>false</default>
+        <label>Standard and Custom Objects</label>
+    </customValue>
+    <customValue>
+        <fullName>Sales and Marketing Applications</fullName>
+        <default>false</default>
+        <label>Sales and Marketing Applications</label>
+    </customValue>
+    <customValue>
+        <fullName>Service and Support Applications</fullName>
+        <default>false</default>
+        <label>Service and Support Applications</label>
+    </customValue>
+    <customValue>
+        <fullName>Activity Management and Collaboration</fullName>
+        <default>false</default>
+        <label>Activity Management and Collaboration</label>
+    </customValue>
+    <customValue>
+        <fullName>Data Management</fullName>
+        <default>false</default>
+        <label>Data Management</label>
+    </customValue>
+    <customValue>
+        <fullName>Analytics-Reports and Dashboards</fullName>
+        <default>false</default>
+        <label>Analytics-Reports and Dashboards</label>
+    </customValue>
+    <customValue>
+        <fullName>Workflow / Process Automation</fullName>
+        <default>false</default>
+        <label>Workflow / Process Automation</label>
+    </customValue>
+    <customValue>
+        <fullName>Desktop and Mobile Administration</fullName>
+        <default>false</default>
+        <label>Desktop and Mobile Administration</label>
+    </customValue>
+    <customValue>
+        <fullName>AppExchange</fullName>
+        <default>false</default>
+        <label>AppExchange</label>
+    </customValue>
+    <customValue>
+        <fullName>Data Modeling and Management</fullName>
+        <default>false</default>
+        <label>Data Modeling and Management</label>
+    </customValue>
+    <customValue>
+        <fullName>Debug and Deployment Tools</fullName>
+        <default>false</default>
+        <label>Debug and Deployment Tools</label>
+    </customValue>
+    <customValue>
+        <fullName>Logic and Process Automation</fullName>
+        <default>false</default>
+        <label>Logic and Process Automation</label>
+    </customValue>
+    <customValue>
+        <fullName>Salesforce Fundamentals</fullName>
+        <default>false</default>
+        <label>Salesforce Fundamentals</label>
+    </customValue>
+    <customValue>
+        <fullName>Testing</fullName>
+        <default>false</default>
+        <label>Testing</label>
+    </customValue>
+    <customValue>
+        <fullName>User Interface</fullName>
+        <default>false</default>
+        <label>User Interface</label>
+    </customValue>
+    <masterLabel>Exam Categories</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

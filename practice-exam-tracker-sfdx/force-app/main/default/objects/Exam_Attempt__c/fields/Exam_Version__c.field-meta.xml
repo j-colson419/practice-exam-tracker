@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Exam_Version__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF ( RecordType.Name = &#39;Practice&#39;, &#39;N/A&#39;,
+IF((MONTH(Attempt_Date__c)  = 2 ||MONTH(Attempt_Date__c)  = 3 ||MONTH(Attempt_Date__c)  = 4 ||MONTH(Attempt_Date__c)  = 5), &#39;Spring \&#39; &#39;, (IF ( (MONTH(Attempt_Date__c)  = 6 ||MONTH(Attempt_Date__c)  = 7 ||MONTH(Attempt_Date__c)  = 8 ||MONTH(Attempt_Date__c)  = 9), &#39;Summer \&#39;&#39;, &#39;Winter \&#39;&#39;))) + RIGHT(TEXT(YEAR( Attempt_Date__c)), 2)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Exam Version</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>
