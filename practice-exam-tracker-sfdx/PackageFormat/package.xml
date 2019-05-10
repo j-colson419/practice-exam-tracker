@@ -56,6 +56,24 @@
         <name>CustomField</name>
     </types>
     <types>
+        <members>Exam_Category.Activity_Management_and_Collaboration</members>
+        <members>Exam_Category.Analytics_Reports_and_Dashboards</members>
+        <members>Exam_Category.AppExchange</members>
+        <members>Exam_Category.Data_Management</members>
+        <members>Exam_Category.Data_Modeling_and_Management</members>
+        <members>Exam_Category.Debug_and_Deployment_Tools</members>
+        <members>Exam_Category.Desktop_and_Mobile_Administration</members>
+        <members>Exam_Category.Logic_and_Process_Automation</members>
+        <members>Exam_Category.Organizational_Setup</members>
+        <members>Exam_Category.Sales_and_Marketing_Applications</members>
+        <members>Exam_Category.Salesforce_Fundamentals</members>
+        <members>Exam_Category.Security_and_Access</members>
+        <members>Exam_Category.Service_and_Support_Applications</members>
+        <members>Exam_Category.Standard_and_Custom_Objects</members>
+        <members>Exam_Category.Testing</members>
+        <members>Exam_Category.User_Interface</members>
+        <members>Exam_Category.User_Setup</members>
+        <members>Exam_Category.Workflow_Process_Automation</members>
         <members>Exam_Type.ADM_201</members>
         <members>Exam_Type.PD1</members>
         <name>CustomMetadata</name>
