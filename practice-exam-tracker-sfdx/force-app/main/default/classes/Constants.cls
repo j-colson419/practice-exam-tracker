@@ -31,6 +31,27 @@ public class Constants {
     public static final List<Exam_Category__mdt> EXAM_CATEGORY_METADATA_RECORDS = [SELECT MasterLabel, Exam_Type__c, Weight__c
                                                                                   FROM Exam_Category__mdt];
     
+    public static final Map<String, List<String>> EXAM_TYPE_TO_CATEGORY_MAP {
+        get{
+            EXAM_TYPE_TO_CATEGORY_MAP = new Map<String, List<String>>();
+            List<Exam_Type__mdt> examTypeRecords = [SELECT MasterLabel, Id FROM Exam_Type__mdt];
+            Map<Id, Exam_Type__mdt> examTypeMap = new Map<Id, Exam_Type__mdt>(examTypeRecords);
+            for(Exam_Category__mdt ec : EXAM_CATEGORY_METADATA_RECORDS){
+                if(EXAM_TYPE_TO_CATEGORY_MAP.containsKey(examTypeMap.get(ec.Exam_Type__c).MasterLabel)){
+                    List<String> catList = EXAM_TYPE_TO_CATEGORY_MAP.get(examTypeMap.get(ec.Exam_Type__c).MasterLabel);
+                    catList.add(ec.MasterLabel);
+                    EXAM_TYPE_TO_CATEGORY_MAP.put(examTypeMap.get(ec.Exam_Type__c).MasterLabel, catList);
+                } else {
+                    List<String> catList = new List<String>();
+                    catList.add(ec.MasterLabel);
+                    EXAM_TYPE_TO_CATEGORY_MAP.put(examTypeMap.get(ec.Exam_Type__c).MasterLabel, catList);
+                }
+            }
+            return EXAM_TYPE_TO_CATEGORY_MAP;
+        }
+        set;
+    }
+    
     public static final Map<String, Decimal> EXAM_CATEGORY_WEIGHTS {
         get{
             EXAM_CATEGORY_WEIGHTS = new Map<String, Decimal>();

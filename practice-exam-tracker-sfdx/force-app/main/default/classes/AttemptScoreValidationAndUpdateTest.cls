@@ -36,4 +36,23 @@ public class AttemptScoreValidationAndUpdateTest {
         
     }
     
+    @isTest
+    public static void validateCategoryMatchesExamAttemptTypeSinglePosTest(){
+        List<Exam_Attempt__c> attempts = [SELECT Id, Associate__c, Attempt_Date__c, Attempt_Number__c, Exam_Type__c FROM Exam_Attempt__c];
+        List<Attempt_Score__c> scoresList = new List<Attempt_Score__c>();
+        for(Exam_Attempt__c ea : attempts){
+            for(Exam_Category__mdt ecmdt : [SELECT MasterLabel, Exam_Type__c, Weight__c FROM Exam_Category__mdt WHERE Exam_Type__r.MasterLabel != :ea.Exam_Type__c]){
+                scoresList.add(new Attempt_Score__c(Exam_Attempt__c = ea.Id, Exam_Category__c = ecmdt.MasterLabel, Percent__c = 100));
+            }
+        }
+        try {
+            insert scoresList;
+        } catch (Exception e){
+            System.debug(LoggingLevel.INFO, 'An exception was thrown while trying to insert attempt score records. This was expected.');
+            System.assert(e.getMessage().contains('The category you chose does not exist for the associated exam type'));
+        }
+        
+        System.assertEquals(0, [SELECT Count() FROM Attempt_Score__c]);
+        
+    }
 }
