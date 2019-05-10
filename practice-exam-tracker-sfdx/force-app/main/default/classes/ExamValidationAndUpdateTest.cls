@@ -37,6 +37,8 @@ public class ExamValidationAndUpdateTest {
 
         List<Attempt_Score__c> scoresForAttempt = TestDataFactory.createExamAttemptScores(attempts);
         insert scoresForAttempt;
+        System.debug([SELECT Count() FROM Attempt_Score__c]);
+        
 
         Exam_Attempt__c attempt = [SELECT Id, Overall_Score__c, Pass__c FROM Exam_Attempt__c WHERE Id = :attempts[0].Id];
         System.assertEquals(100, attempt.Overall_Score__c);

@@ -48,6 +48,7 @@ public class ExamValidationAndUpdateHelper {
         for(AggregateResult ar : [SELECT SUM(Weighted_Percent__c), Exam_Attempt__c FROM Attempt_Score__c
                                   WHERE Exam_Attempt__c IN :attemptIds
                                   GROUP BY Exam_Attempt__c]){
+                                      System.debug('Overall Score: ' + (Decimal)ar.get('expr0'));
                                    attemptsToUpdate.add(new Exam_Attempt__c(Id = (Id)ar.get('Exam_Attempt__c'),
                                                                            Overall_Score__c = (Decimal)ar.get('expr0')));   
                                   }
