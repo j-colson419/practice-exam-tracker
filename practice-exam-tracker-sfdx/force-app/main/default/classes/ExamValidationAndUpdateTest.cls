@@ -45,4 +45,35 @@ public class ExamValidationAndUpdateTest {
         System.assert(attempt.Pass__c);
     }
     
+    @isTest
+    public static void updateAssociateCertificationStatusSinglePosTest(){
+        List<Contact> associates = [SELECT Id FROM Contact];
+        //create exam attempt
+        List<Exam_Attempt__c> attempts = TestDataFactory.createExamAttempts(associates, false, Date.newInstance(2019, 01, 03));
+        insert attempts;
+		//create attempt scores
+        List<Attempt_Score__c> scoresForAttempt = TestDataFactory.createExamAttemptScores(attempts, true);
+        insert scoresForAttempt;
+        
+        associates = [SELECT Id, Admin_Certified__c, PD1_Certified__c FROM Contact];
+        Map<Id, Contact> associateMap = new Map<Id,Contact>(associates);
+        for(Exam_Attempt__c a : [SELECT Id, Pass__c, Overall_Score__c, Associate__c, Exam_Type__c FROM Exam_Attempt__c]){
+            System.assert(a.Pass__c);
+            if(a.Pass__c){
+                if(a.Exam_Type__c == 'ADM 201'){
+                    System.assert(associateMap.get(a.Associate__c).Admin_Certified__c);
+                } else if (a.Exam_Type__c == 'PD1'){
+                    System.assert(associateMap.get(a.Associate__c).PD1_Certified__c);
+                }
+            } else {
+                if(a.Exam_Type__c == 'ADM 201'){
+                    System.assert(!associateMap.get(a.Associate__c).Admin_Certified__c);
+                } else if (a.Exam_Type__c == 'PD1'){
+                    System.assert(!associateMap.get(a.Associate__c).PD1_Certified__c);
+                }
+            }
+        }
+        
+    }
+    
 }
