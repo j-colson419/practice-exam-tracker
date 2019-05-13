@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Certification_Name__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Certification Name</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Passing_Score__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Passing Score</label>
+        <precision>3</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <type>Percent</type>
+    </fields>
+    <label>Exam Type</label>
+    <listViews>
+        <fullName>All2</fullName>
+        <columns>Certification_Name__c</columns>
+        <columns>MasterLabel</columns>
+        <columns>Passing_Score__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <pluralLabel>Exam Types</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>
