@@ -3,7 +3,7 @@
     <applicationVisibilities>
         <application>Practice_Exam_Tracker</application>
         <default>false</default>
-        <visible>false</visible>
+        <visible>true</visible>
     </applicationVisibilities>
     <classAccesses>
         <apexClass>AssociateMassStageUpdateController</apexClass>
@@ -206,6 +206,10 @@
         <recordType>Exam_Attempt__c.Practice</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
+    <tabVisibilities>
+        <tab>Associate_Master_Stage_Update</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
     <tabVisibilities>
         <tab>Attempt_Score__c</tab>
         <visibility>Hidden</visibility>

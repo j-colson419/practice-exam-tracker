@@ -6,6 +6,10 @@
         <visible>false</visible>
     </applicationVisibilities>
     <classAccesses>
+        <apexClass>AssociateMassStageUpdateController</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>AttemptScoreValidationAndUpdateHelper</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -166,6 +170,10 @@
         <recordType>Exam_Attempt__c.Practice</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
+    <tabVisibilities>
+        <tab>Associate_Master_Stage_Update</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
     <tabVisibilities>
         <tab>Attempt_Score__c</tab>
         <visibility>Hidden</visibility>
