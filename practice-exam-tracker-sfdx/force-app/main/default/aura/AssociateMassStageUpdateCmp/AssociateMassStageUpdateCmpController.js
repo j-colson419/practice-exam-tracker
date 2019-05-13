@@ -19,6 +19,21 @@
 	},
     
     updateSelectedRecords : function(component, event, helper){
-        
+        var selectedRows = component.get('v.selectedRows');
+        var newMasterStageValue = component.get('v.selectedStageValue');
+        var action = component.get('c.updateMasterStageValue');
+        action.setParams({
+            "associates" : selectedRows,
+            "newValue" : newMasterStageValue
+        });
+        action.setCallback(this, function(resp){
+            var state = resp.getState();
+            if(state === 'SUCCESS' && component.isValid){
+                component.set('v.successMessage', resp.getReturnValue() + ' Associates were updated to have a Master Stage value of ' + newMasterStageValue);
+            } else {
+                console.log('Error while updating Associate records in database. \n Response State: ' + state + '.');
+            }
+        });
+        $A.enqueueAction(action);
     }
 })

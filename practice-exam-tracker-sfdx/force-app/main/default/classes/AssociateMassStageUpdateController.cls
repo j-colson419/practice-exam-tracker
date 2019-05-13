@@ -19,4 +19,18 @@ public class AssociateMassStageUpdateController {
         return masterStageOptionLabels;
     }
     
+    @AuraEnabled
+    public static Integer updateMasterStageValue(List<Contact> associates, String newValue){
+        for(Contact c : associates){
+            c.Master_Stage__c = newValue;
+        }
+        try {
+            update associates;
+            return associates.size();
+        } catch (Exception e){
+            System.debug('An unexpected error occurred while trying to update associates master stage value.');
+            throw new AuraHandledException('An unexpected error occurred while trying to update associates master stage value.');
+        }
+    }
+    
 }
