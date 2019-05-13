@@ -52,6 +52,17 @@
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
+    <label>Exam Attempt</label>
+    <nameField>
+        <displayFormat>Attempt-{0000}</displayFormat>
+        <label>Exam Attempt ID</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Exam Attempts</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <startsWith>Vowel</startsWith>
+    <visibility>Public</visibility>
     <fields>
         <fullName>Associate__c</fullName>
         <externalId>false</externalId>
@@ -113,8 +124,8 @@
     <fields>
         <fullName>Exam_Version__c</fullName>
         <externalId>false</externalId>
-        <formula>IF ( RecordType.Name = &apos;Practice&apos;, &apos;N/A&apos;,
-IF((MONTH(Attempt_Date__c)  = 2 ||MONTH(Attempt_Date__c)  = 3 ||MONTH(Attempt_Date__c)  = 4 ||MONTH(Attempt_Date__c)  = 5), &apos;Spring \&apos; &apos;, (IF ( (MONTH(Attempt_Date__c)  = 6 ||MONTH(Attempt_Date__c)  = 7 ||MONTH(Attempt_Date__c)  = 8 ||MONTH(Attempt_Date__c)  = 9), &apos;Summer \&apos;&apos;, &apos;Winter \&apos;&apos;))) + RIGHT(TEXT(YEAR( Attempt_Date__c)), 2)
+        <formula>IF ( RecordType.Name = &#39;Practice&#39;, &#39;N/A&#39;,
+IF((MONTH(Attempt_Date__c)  = 2 ||MONTH(Attempt_Date__c)  = 3 ||MONTH(Attempt_Date__c)  = 4 ||MONTH(Attempt_Date__c)  = 5), &#39;Spring \&#39; &#39;, (IF ( (MONTH(Attempt_Date__c)  = 6 ||MONTH(Attempt_Date__c)  = 7 ||MONTH(Attempt_Date__c)  = 8 ||MONTH(Attempt_Date__c)  = 9), &#39;Summer \&#39;&#39;, &#39;Winter \&#39;&#39;))) + RIGHT(TEXT(YEAR( Attempt_Date__c)), 2)
 )</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Exam Version</label>
@@ -158,18 +169,6 @@ IF((MONTH(Attempt_Date__c)  = 2 ||MONTH(Attempt_Date__c)  = 3 ||MONTH(Attempt_Da
         <type>Number</type>
         <unique>false</unique>
     </fields>
-    <label>Exam Attempt</label>
-    <listViews>
-        <fullName>All</fullName>
-        <filterScope>Everything</filterScope>
-        <label>All</label>
-    </listViews>
-    <nameField>
-        <displayFormat>Attempt-{0000}</displayFormat>
-        <label>Exam Attempt ID</label>
-        <type>AutoNumber</type>
-    </nameField>
-    <pluralLabel>Exam Attempts</pluralLabel>
     <recordTypes>
         <fullName>Certification</fullName>
         <active>true</active>
@@ -202,8 +201,9 @@ IF((MONTH(Attempt_Date__c)  = 2 ||MONTH(Attempt_Date__c)  = 3 ||MONTH(Attempt_Da
             </values>
         </picklistValues>
     </recordTypes>
-    <searchLayouts/>
-    <sharingModel>ControlledByParent</sharingModel>
-    <startsWith>Vowel</startsWith>
-    <visibility>Public</visibility>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
 </CustomObject>

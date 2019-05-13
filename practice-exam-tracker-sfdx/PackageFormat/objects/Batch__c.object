@@ -52,6 +52,15 @@
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
+    <label>Batch</label>
+    <nameField>
+        <label>Batch Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Batches</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
     <fields>
         <fullName>Length__c</fullName>
         <description>Number of weeks that the training will run.</description>
@@ -94,18 +103,9 @@
         <trackTrending>false</trackTrending>
         <type>Date</type>
     </fields>
-    <label>Batch</label>
     <listViews>
         <fullName>All</fullName>
         <filterScope>Everything</filterScope>
         <label>All</label>
     </listViews>
-    <nameField>
-        <label>Batch Name</label>
-        <type>Text</type>
-    </nameField>
-    <pluralLabel>Batches</pluralLabel>
-    <searchLayouts/>
-    <sharingModel>ReadWrite</sharingModel>
-    <visibility>Public</visibility>
 </CustomObject>

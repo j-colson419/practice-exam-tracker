@@ -52,6 +52,16 @@
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
+    <label>Batch Assignment</label>
+    <nameField>
+        <displayFormat>{YY}{MM}-{0000}</displayFormat>
+        <label>Batch Assignment ID</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Batch Assignments</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
     <fields>
         <fullName>ADM_Certified__c</fullName>
         <externalId>false</externalId>
@@ -106,14 +116,4 @@
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
-    <label>Batch Assignment</label>
-    <nameField>
-        <displayFormat>{YY}{MM}-{0000}</displayFormat>
-        <label>Batch Assignment ID</label>
-        <type>AutoNumber</type>
-    </nameField>
-    <pluralLabel>Batch Assignments</pluralLabel>
-    <searchLayouts/>
-    <sharingModel>ControlledByParent</sharingModel>
-    <visibility>Public</visibility>
 </CustomObject>

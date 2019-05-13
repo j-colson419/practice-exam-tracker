@@ -9,6 +9,45 @@
         <type>Checkbox</type>
     </fields>
     <fields>
+        <fullName>Master_Stage__c</fullName>
+        <externalId>false</externalId>
+        <label>Master Stage</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Selected</fullName>
+                    <default>false</default>
+                    <label>Selected</label>
+                </value>
+                <value>
+                    <fullName>Confirmed</fullName>
+                    <default>false</default>
+                    <label>Confirmed</label>
+                </value>
+                <value>
+                    <fullName>Training</fullName>
+                    <default>false</default>
+                    <label>Training</label>
+                </value>
+                <value>
+                    <fullName>Staging</fullName>
+                    <default>false</default>
+                    <label>Staging</label>
+                </value>
+                <value>
+                    <fullName>Dropped</fullName>
+                    <default>false</default>
+                    <label>Dropped</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
         <fullName>PD1_Certified__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>

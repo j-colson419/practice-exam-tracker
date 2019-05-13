@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Exam Type</label>
+    <pluralLabel>Exam Types</pluralLabel>
+    <visibility>Public</visibility>
     <fields>
         <fullName>Certification_Name__c</fullName>
         <externalId>false</externalId>
@@ -20,7 +23,6 @@
         <scale>0</scale>
         <type>Percent</type>
     </fields>
-    <label>Exam Type</label>
     <listViews>
         <fullName>All2</fullName>
         <columns>Certification_Name__c</columns>
@@ -29,6 +31,4 @@
         <filterScope>Everything</filterScope>
         <label>All</label>
     </listViews>
-    <pluralLabel>Exam Types</pluralLabel>
-    <visibility>Public</visibility>
 </CustomObject>

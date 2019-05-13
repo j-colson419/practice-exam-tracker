@@ -1,129 +1,152 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>sfdx project</fullName>
-    <description>for use of pulling things to sfdx project.</description>
-    <types>
-        <members>AttemptScoreValidationAndUpdateHelper</members>
-        <members>CertificationCountHelper</members>
-        <members>CertificationCountHelperTest</members>
-        <members>Constants</members>
-        <members>ExamCategoryWeightWrapper</members>
-        <members>ExamValidationAndUpdateHelper</members>
-        <members>ExamValidationAndUpdateTest</members>
-        <members>TestDataFactory</members>
-        <name>ApexClass</name>
-    </types>
-    <types>
-        <members>AssociateTrigger</members>
-        <members>AttemptScoreTrigger</members>
-        <members>BatchAssignmentTrigger</members>
-        <members>ExamAttemptTrigger</members>
-        <name>ApexTrigger</name>
-    </types>
-    <types>
-        <members>Practice_Exam_Tracker</members>
-        <name>CustomApplication</name>
-    </types>
-    <types>
-        <members>Attempt_Score__c.Exam_Attempt__c</members>
-        <members>Attempt_Score__c.Exam_Category__c</members>
-        <members>Attempt_Score__c.Percent__c</members>
-        <members>Attempt_Score__c.Weighted_Percent__c</members>
-        <members>Batch_Assignment__c.ADM_Certified__c</members>
-        <members>Batch_Assignment__c.Associate_Name__c</members>
-        <members>Batch_Assignment__c.Associate__c</members>
-        <members>Batch_Assignment__c.Batch__c</members>
-        <members>Batch_Assignment__c.PD1_Certified__c</members>
-        <members>Batch__c.Length__c</members>
-        <members>Batch__c.Number_ADM_Certified__c</members>
-        <members>Batch__c.Number_PD1_Certified__c</members>
-        <members>Batch__c.Start_Date__c</members>
-        <members>Contact.Admin_Certified__c</members>
-        <members>Contact.PD1_Certified__c</members>
-        <members>Exam_Attempt__c.Associate__c</members>
-        <members>Exam_Attempt__c.Attempt_Date__c</members>
-        <members>Exam_Attempt__c.Attempt_Number__c</members>
-        <members>Exam_Attempt__c.Days_Since_Start_Of_Batch__c</members>
-        <members>Exam_Attempt__c.Exam_Type__c</members>
-        <members>Exam_Attempt__c.Exam_Version__c</members>
-        <members>Exam_Attempt__c.Overall_Score__c</members>
-        <members>Exam_Attempt__c.Pass__c</members>
-        <members>Exam_Attempt__c.Practice_Exam_Version__c</members>
-        <members>Exam_Category__mdt.Exam_Type__c</members>
-        <members>Exam_Category__mdt.Weight__c</members>
-        <members>Exam_Type__mdt.Certification_Name__c</members>
-        <members>Exam_Type__mdt.Passing_Score__c</members>
-        <name>CustomField</name>
-    </types>
-    <types>
-        <members>Exam_Category.Activity_Management_and_Collaboration</members>
-        <members>Exam_Category.Analytics_Reports_and_Dashboards</members>
-        <members>Exam_Category.AppExchange</members>
-        <members>Exam_Category.Data_Management</members>
-        <members>Exam_Category.Data_Modeling_and_Management</members>
-        <members>Exam_Category.Debug_and_Deployment_Tools</members>
-        <members>Exam_Category.Desktop_and_Mobile_Administration</members>
-        <members>Exam_Category.Logic_and_Process_Automation</members>
-        <members>Exam_Category.Organizational_Setup</members>
-        <members>Exam_Category.Sales_and_Marketing_Applications</members>
-        <members>Exam_Category.Salesforce_Fundamentals</members>
-        <members>Exam_Category.Security_and_Access</members>
-        <members>Exam_Category.Service_and_Support_Applications</members>
-        <members>Exam_Category.Standard_and_Custom_Objects</members>
-        <members>Exam_Category.Testing</members>
-        <members>Exam_Category.User_Interface</members>
-        <members>Exam_Category.User_Setup</members>
-        <members>Exam_Category.Workflow_Process_Automation</members>
-        <members>Exam_Type.ADM_201</members>
-        <members>Exam_Type.PD1</members>
-        <name>CustomMetadata</name>
-    </types>
-    <types>
-        <members>Attempt_Score__c</members>
-        <members>Batch_Assignment__c</members>
-        <members>Batch__c</members>
-        <members>Exam_Attempt__c</members>
-        <members>Exam_Category__mdt</members>
-        <members>Exam_Type__mdt</members>
-        <name>CustomObject</name>
-    </types>
-    <types>
-        <members>Attempt_Score__c</members>
-        <members>Batch__c</members>
-        <members>Exam_Attempt__c</members>
-        <name>CustomTab</name>
-    </types>
-    <types>
-        <members>Practice_Exam_Tracker_UtilityBar</members>
-        <name>FlexiPage</name>
-    </types>
-    <types>
-        <members>Exam_Categories</members>
-        <members>Exam_Types</members>
-        <name>GlobalValueSet</name>
-    </types>
-    <types>
-        <members>Attempt_Score__c-Attempt Score Layout</members>
-        <members>Batch_Assignment__c-Batch Assignment Layout</members>
-        <members>Batch__c-Batch Layout</members>
-        <members>Exam_Attempt__c-Certification Exam Layout</members>
-        <members>Exam_Attempt__c-Exam Attempt Layout</members>
-        <members>Exam_Attempt__c-Practice Exam Layout</members>
-        <members>Exam_Category__mdt-Exam Category Layout</members>
-        <members>Exam_Type__mdt-Exam Type Layout</members>
-        <name>Layout</name>
-    </types>
-    <types>
-        <members>Attempt_Score__c.All</members>
-        <members>Batch__c.All</members>
-        <members>Exam_Attempt__c.All</members>
-        <members>Exam_Type__mdt.All2</members>
-        <name>ListView</name>
-    </types>
-    <types>
-        <members>Exam_Attempt__c.Certification</members>
-        <members>Exam_Attempt__c.Practice</members>
-        <name>RecordType</name>
-    </types>
-    <version>45.0</version>
+  <types>
+    <name>CustomApplication</name>
+    <members>Practice_Exam_Tracker</members>
+  </types>
+  <types>
+    <name>AuraDefinitionBundle</name>
+    <members>AssociateMassStageUpdateApp</members>
+    <members>AssociateMassStageUpdateCmp</members>
+  </types>
+  <types>
+    <name>ApexClass</name>
+    <members>AssociateMassStageUpdateController</members>
+    <members>AttemptScoreValidationAndUpdateHelper</members>
+    <members>AttemptScoreValidationAndUpdateTest</members>
+    <members>CertificationCountHelper</members>
+    <members>CertificationCountHelperTest</members>
+    <members>Constants</members>
+    <members>ExamCategoryWeightWrapper</members>
+    <members>ExamValidationAndUpdateHelper</members>
+    <members>ExamValidationAndUpdateTest</members>
+    <members>TestDataFactory</members>
+  </types>
+  <types>
+    <name>CustomMetadata</name>
+    <members>Exam_Category.Activity_Management_and_Collaboration</members>
+    <members>Exam_Category.Analytics_Reports_and_Dashboards</members>
+    <members>Exam_Category.AppExchange</members>
+    <members>Exam_Category.Data_Management</members>
+    <members>Exam_Category.Data_Modeling_and_Management</members>
+    <members>Exam_Category.Debug_and_Deployment_Tools</members>
+    <members>Exam_Category.Desktop_and_Mobile_Administration</members>
+    <members>Exam_Category.Logic_and_Process_Automation</members>
+    <members>Exam_Category.Organizational_Setup</members>
+    <members>Exam_Category.Sales_and_Marketing_Applications</members>
+    <members>Exam_Category.Salesforce_Fundamentals</members>
+    <members>Exam_Category.Security_and_Access</members>
+    <members>Exam_Category.Service_and_Support_Applications</members>
+    <members>Exam_Category.Standard_and_Custom_Objects</members>
+    <members>Exam_Category.Testing</members>
+    <members>Exam_Category.User_Interface</members>
+    <members>Exam_Category.User_Setup</members>
+    <members>Exam_Category.Workflow_Process_Automation</members>
+    <members>Exam_Type.ADM_201</members>
+    <members>Exam_Type.PD1</members>
+  </types>
+  <types>
+    <name>FlexiPage</name>
+    <members>Associate_Master_Stage_Update</members>
+    <members>Practice_Exam_Tracker_UtilityBar</members>
+  </types>
+  <types>
+    <name>GlobalValueSet</name>
+    <members>Exam_Categories</members>
+    <members>Exam_Types</members>
+  </types>
+  <types>
+    <name>Layout</name>
+    <members>Attempt_Score__c-Attempt Score Layout</members>
+    <members>Batch_Assignment__c-Batch Assignment Layout</members>
+    <members>Batch__c-Batch Layout</members>
+    <members>Contact-Contact %28Marketing%29 Layout</members>
+    <members>Contact-Contact %28Sales%29 Layout</members>
+    <members>Contact-Contact %28Support%29 Layout</members>
+    <members>Contact-Contact Layout</members>
+    <members>Exam_Attempt__c-Certification Exam Layout</members>
+    <members>Exam_Attempt__c-Exam Attempt Layout</members>
+    <members>Exam_Attempt__c-Practice Exam Layout</members>
+    <members>Exam_Category__mdt-Exam Category Layout</members>
+    <members>Exam_Type__mdt-Exam Type Layout</members>
+  </types>
+  <types>
+    <name>CustomObject</name>
+    <members>Attempt_Score__c</members>
+    <members>Batch_Assignment__c</members>
+    <members>Batch__c</members>
+    <members>Exam_Attempt__c</members>
+    <members>Exam_Category__mdt</members>
+    <members>Exam_Type__mdt</members>
+  </types>
+  <types>
+    <name>CustomField</name>
+    <members>Attempt_Score__c.Exam_Attempt__c</members>
+    <members>Attempt_Score__c.Exam_Category__c</members>
+    <members>Attempt_Score__c.Percent__c</members>
+    <members>Attempt_Score__c.Weighted_Percent__c</members>
+    <members>Batch_Assignment__c.ADM_Certified__c</members>
+    <members>Batch_Assignment__c.Associate_Name__c</members>
+    <members>Batch_Assignment__c.Associate__c</members>
+    <members>Batch_Assignment__c.Batch__c</members>
+    <members>Batch_Assignment__c.PD1_Certified__c</members>
+    <members>Batch__c.Length__c</members>
+    <members>Batch__c.Number_ADM_Certified__c</members>
+    <members>Batch__c.Number_PD1_Certified__c</members>
+    <members>Batch__c.Start_Date__c</members>
+    <members>Contact.Admin_Certified__c</members>
+    <members>Contact.Master_Stage__c</members>
+    <members>Contact.PD1_Certified__c</members>
+    <members>Exam_Attempt__c.Associate__c</members>
+    <members>Exam_Attempt__c.Attempt_Date__c</members>
+    <members>Exam_Attempt__c.Attempt_Number__c</members>
+    <members>Exam_Attempt__c.Days_Since_Start_Of_Batch__c</members>
+    <members>Exam_Attempt__c.Exam_Type__c</members>
+    <members>Exam_Attempt__c.Exam_Version__c</members>
+    <members>Exam_Attempt__c.Overall_Score__c</members>
+    <members>Exam_Attempt__c.Pass__c</members>
+    <members>Exam_Attempt__c.Practice_Exam_Version__c</members>
+    <members>Exam_Category__mdt.Exam_Type__c</members>
+    <members>Exam_Category__mdt.Weight__c</members>
+    <members>Exam_Type__mdt.Certification_Name__c</members>
+    <members>Exam_Type__mdt.Passing_Score__c</members>
+  </types>
+  <types>
+    <name>ListView</name>
+    <members>Attempt_Score__c.All</members>
+    <members>Batch__c.All</members>
+    <members>Exam_Attempt__c.All</members>
+    <members>Exam_Type__mdt.All2</members>
+  </types>
+  <types>
+    <name>RecordType</name>
+    <members>Exam_Attempt__c.Certification</members>
+    <members>Exam_Attempt__c.Practice</members>
+  </types>
+  <types>
+    <name>PermissionSet</name>
+    <members>Practice_Exam_Tracker_User</members>
+  </types>
+  <types>
+    <name>Profile</name>
+    <members>Admin</members>
+    <members>Custom%3A Marketing Profile</members>
+    <members>Custom%3A Sales Profile</members>
+    <members>Custom%3A Support Profile</members>
+  </types>
+  <types>
+    <name>CustomTab</name>
+    <members>Associate_Master_Stage_Update</members>
+    <members>Attempt_Score__c</members>
+    <members>Batch__c</members>
+    <members>Exam_Attempt__c</members>
+  </types>
+  <types>
+    <name>ApexTrigger</name>
+    <members>AssociateTrigger</members>
+    <members>AttemptScoreTrigger</members>
+    <members>BatchAssignmentTrigger</members>
+    <members>ExamAttemptTrigger</members>
+  </types>
+  <version>45.0</version>
 </Package>

@@ -52,6 +52,17 @@
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
+    <label>Attempt Score</label>
+    <nameField>
+        <displayFormat>Score-{00000}</displayFormat>
+        <label>Attempt Score Id</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Attempt Scores</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <startsWith>Vowel</startsWith>
+    <visibility>Public</visibility>
     <fields>
         <fullName>Exam_Attempt__c</fullName>
         <externalId>false</externalId>
@@ -97,20 +108,9 @@
         <trackTrending>false</trackTrending>
         <type>Percent</type>
     </fields>
-    <label>Attempt Score</label>
     <listViews>
         <fullName>All</fullName>
         <filterScope>Everything</filterScope>
         <label>All</label>
     </listViews>
-    <nameField>
-        <displayFormat>Score-{00000}</displayFormat>
-        <label>Attempt Score Id</label>
-        <type>AutoNumber</type>
-    </nameField>
-    <pluralLabel>Attempt Scores</pluralLabel>
-    <searchLayouts/>
-    <sharingModel>ControlledByParent</sharingModel>
-    <startsWith>Vowel</startsWith>
-    <visibility>Public</visibility>
 </CustomObject>
