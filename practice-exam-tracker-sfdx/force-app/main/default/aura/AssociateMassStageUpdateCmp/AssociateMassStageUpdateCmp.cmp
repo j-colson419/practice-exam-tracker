@@ -1,0 +1,33 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes" access="global" controller="AssociateMassStageUpdateController">
+	<!-- Attributes -->
+    <aura:attribute name="stageValueOptions" type="List"/>
+    <aura:attribute name="selectedStageValue" type="String"/>
+    <aura:attribute name="selectedRows" type="List" access="PRIVATE"/>
+    <aura:attribute name="associateData" type="Object"/>
+    <aura:attribute name="columns" type="List"/>
+    
+    <!-- Events -->
+    <aura:handler name="init" value="{! this }" action="{! c.init }"/>
+    
+    <!-- Select Option Component: to allow selection of new 'Master Stage' field value -->
+    <div>
+    	<div>
+        	<lightning:select name="masterStageOptions" label="Select a new Master Stage value" value="{!v.selectedStageValue}">
+                <aura:iteration items="{!v.stageValueOptions}" var="option">
+                    <option text="{!option}" value="{!option}"/>
+                </aura:iteration>
+            </lightning:select>
+        </div>
+        <div>
+            <lightning:button label="Update Selected" title="Update Button" onclick="{!c.updateSelectedRecords}"/>
+        </div>
+    </div>
+    
+    <!-- Data Table: to display Associate(Contact) records -->
+    <div>
+    	<lightning:datatable columns="{!v.columns}"
+                             data="{!v.associateData}"
+                             keyField="id"
+                             selectedRows="{!v.selectedRows}"/>
+    </div>
+</aura:component>

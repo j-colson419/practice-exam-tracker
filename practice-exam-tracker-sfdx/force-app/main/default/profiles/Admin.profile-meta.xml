@@ -6,6 +6,10 @@
         <visible>false</visible>
     </applicationVisibilities>
     <classAccesses>
+        <apexClass>AssociateMassStageUpdateController</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>AttemptScoreValidationAndUpdateHelper</apexClass>
         <enabled>true</enabled>
     </classAccesses>
