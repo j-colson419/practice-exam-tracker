@@ -88,6 +88,11 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.Master_Stage__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Contact.PD1_Certified__c</field>
         <readable>false</readable>
@@ -130,6 +135,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Batch__c-Batch Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Contact-Contact Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Exam_Attempt__c-Certification Exam Layout</layout>
