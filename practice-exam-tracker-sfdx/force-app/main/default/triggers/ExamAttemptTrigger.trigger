@@ -1,18 +1,28 @@
 trigger ExamAttemptTrigger on Exam_Attempt__c (before insert, before update, after insert, after update) {
-
+    
     
     if(Trigger.isBefore && (Trigger.isInsert || Trigger.isUpdate)){
         //Fill in Days_Since_Start_Of_Batch field
         ExamValidationAndUpdateHelper.updateExamAttemptDaysSinceStart(Trigger.new);
-    } else if (Trigger.isAfter && (Trigger.isInsert || Trigger.isUpdate)){
-        //Update Associate checkboxes if the attempt was a certification attempt and was passed.
-        List<Exam_Attempt__c> passedCertAttempts = new List<Exam_Attempt__c>();
-        for(Exam_Attempt__c ea : Trigger.new){
-            if(ea.Pass__c && ea.RecordTypeId == Constants.EXAM_ATTEMPT_RECORD_TYPES.get('Certification').getRecordTypeId()){
-                passedCertAttempts.add(ea);
+    } else if (Trigger.isAfter){
+        //Update Associate checkboxes if the attempt was a certification attempt.
+        List<Exam_Attempt__c> certAttempts = new List<Exam_Attempt__c>();
+        if(Trigger.isInsert || Trigger.isUpdate || Trigger.isUndelete){
+            for(Exam_Attempt__c ea : Trigger.new){
+                if(ea.RecordTypeId == Constants.EXAM_ATTEMPT_RECORD_TYPES.get('Certification').getRecordTypeId()){
+                    certAttempts.add(ea);
+                }
+            }
+        } else if (Trigger.isDelete){
+            for(Exam_Attempt__c ea : Trigger.old){
+                if(ea.RecordTypeId == Constants.EXAM_ATTEMPT_RECORD_TYPES.get('Certification').getRecordTypeId()){
+                    certAttempts.add(ea);
+                }
             }
         }
-        ExamValidationAndUpdateHelper.updateAssociateCertificationStatus(passedCertAttempts);
+        if(certAttempts.size() > 0){
+            ExamValidationAndUpdateHelper.updateAssociateCertificationStatus(certAttempts);
+        }
     }
     
 }

@@ -27,19 +27,45 @@ public class ExamValidationAndUpdateHelper {
         //return examAttemptMap;
     }
     
-    public static void updateAssociateCertificationStatus(List<Exam_Attempt__c> attemptsList){
+    /*public static void updateAssociateCertificationStatus(List<Exam_Attempt__c> attemptsList){
         List<Contact> associatesToUpdate = new List<Contact>();
         for(Exam_Attempt__c ea : attemptsList){
             if(ea.Exam_Type__c == 'ADM 201'){
-                associatesToUpdate.add(new Contact(Id = ea.Associate__c, Admin_Certified__c = true));
+                associatesToUpdate.add(new Contact(Id = ea.Associate__c, Admin_Certified__c = ea.Pass__c));
             } else if (ea.Exam_Type__c == 'PD1'){
-                associatesToUpdate.add(new Contact(Id = ea.Associate__c, PD1_Certified__c = true));
+                associatesToUpdate.add(new Contact(Id = ea.Associate__c, PD1_Certified__c = ea.Pass__c));
             }
         }
         try {
             update associatesToUpdate;
         } catch (Exception e){
             System.debug('Something went wrong while trying to update the certification status of an Associate record.');
+        }
+    }
+	*/    
+
+    public static void updateAssociateCertificationStatus(List<Exam_Attempt__c> attemptsList){
+        Set<Id> associateIds = new Set<Id>();
+        List<Contact> associatesToUpdate = new List<Contact>();
+        for(Exam_Attempt__c ea : attemptsList){
+            associateIds.add(ea.Associate__c);
+        }
+        List<AggregateResult> arList = [SELECT COUNT(Id), Exam_Type__c, Associate__c 
+                                        FROM Exam_Attempt__c 
+                                        WHERE Pass__c = true 
+                                        AND Associate__c IN :associateIds 
+                                        AND RecordTypeId = :Constants.EXAM_ATTEMPT_RECORD_TYPES.get('Certification').getRecordTypeId()
+                                        GROUP BY Associate__c, Exam_Type__c];
+        for(Id aId : associateIds){
+            Contact a = new Contact(Id = aId, Admin_Certified__c = false, PD1_Certified__c = false);
+            for(AggregateResult ar : arList){
+                if(aId == (Id)ar.get('Associate__c') && (String)ar.get('Exam_Type__c') == 'ADM 201' ){
+                  a.Admin_Certified__c = true;
+                } else if (aId == (Id)ar.get('Associate__c') && (String)ar.get('Exam_Type__c') ==  'PD1'){
+                    a.PD1_Certified__c = true;
+                }
+            }
+            associatesToUpdate.add(a);
         }
     }
     
@@ -49,8 +75,8 @@ public class ExamValidationAndUpdateHelper {
                                   WHERE Exam_Attempt__c IN :attemptIds
                                   GROUP BY Exam_Attempt__c]){
                                       System.debug('Overall Score: ' + (Decimal)ar.get('expr0'));
-                                   attemptsToUpdate.add(new Exam_Attempt__c(Id = (Id)ar.get('Exam_Attempt__c'),
-                                                                           Overall_Score__c = (Decimal)ar.get('expr0')));   
+                                      attemptsToUpdate.add(new Exam_Attempt__c(Id = (Id)ar.get('Exam_Attempt__c'),
+                                                                               Overall_Score__c = (Decimal)ar.get('expr0')));   
                                   }
         try {
             update attemptsToUpdate;

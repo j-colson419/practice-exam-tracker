@@ -33,7 +33,6 @@
                 "mode" : "dismissible"
             });
         }
-        var reInit = component.get('c.doInit');
-        $A.enqueueAction(reInit);
+        $A.get('e.force:refreshView').fire();
     }
 })
