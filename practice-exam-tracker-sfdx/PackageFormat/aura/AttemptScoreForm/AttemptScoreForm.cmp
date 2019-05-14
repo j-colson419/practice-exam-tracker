@@ -1,0 +1,45 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" controller="AttemptScoreFormController">
+    <!-- Attributes -->
+    <aura:attribute name="scores" type="Attempt_Score__c[]"/>
+    
+    <!-- Events -->
+    <aura:registerEvent name="attemptScoreInsertEvent" type="c:AttemptScoreInsertEvent"/>
+    
+    <!-- Other Markup -->
+    <div class="slds-card">
+        <div class="slds-card__header slds-grid">
+            <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                <div class="slds-media__figure">
+                    <span class="slds-icon_container slds-icon-standard-account" title="account">
+                        <lightning:icon iconName="standard:account" title="Attempt Scores"/>
+                    </span>
+                </div>
+                <div class="slds-media__body">
+                    <h2 class="slds-card__header-title">
+                        <div class="slds-card__header-link slds-truncate" title="Attempt Scores">
+                            <span>Attempt Scores</span>
+                        </div>
+                    </h2>
+                </div>
+            </header>
+        </div>
+        <div class="slds-card__body slds-card__body_inner">
+            <aura:iteration items="{!v.scores}" var="score">
+                <div class="slds-grid">
+                    <div class="slds-col slds-size_2-of-3">
+                        <lightning:formattedText value="{!score.Exam_Category__c}"/>
+                    </div>
+                    <div class="slds-col slds-size_1-of-3"> 
+                        <lightning:input type="Number" value="{!score.Percent__c}" formatter="percent-fixed"/>
+                    </div>
+                </div>
+            </aura:iteration>
+        </div>
+        <div class="slds-align_absolute-center">
+            <footer class="slds-card__footer">
+                <lightning:button class="slds-card__footer-action" label="Submit Scores" onclick="{!c.submitScores}"/>
+            </footer>
+        </div>
+    </div>
+    
+</aura:component>
