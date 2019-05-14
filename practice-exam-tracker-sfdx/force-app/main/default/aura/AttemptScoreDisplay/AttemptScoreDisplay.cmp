@@ -1,9 +1,9 @@
-<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" controller="AttemptScoreFormController">
-    <!-- Attributes -->
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global">
+	<!-- Attributes -->
     <aura:attribute name="scores" type="Attempt_Score__c[]"/>
     
     <!-- Events -->
-    <aura:registerEvent name="attemptScoreInsertEvent" type="c:AttemptScoreInsertEvent"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
     
     <!-- Other Markup -->
     <div class="slds-card">
@@ -30,14 +30,14 @@
                         <lightning:formattedText value="{!score.Exam_Category__c}"/>
                     </div>
                     <div class="slds-col slds-size_1-of-3"> 
-                        <lightning:input type="Number" value="{!score.Percent__c}" formatter="percent-fixed"/>
+                        <lightning:formattedNumber style="percent" value="{!score.Percent__c}"/>
                     </div>
                 </div>
             </aura:iteration>
         </div>
         <div class="slds-align_absolute-center">
             <footer class="slds-card__footer">
-                    <lightning:button class="slds-card__footer-action" label="Submit Scores" onclick="{!c.submitScores}"/>
+             
             </footer>
         </div>
     </div>

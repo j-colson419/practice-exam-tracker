@@ -81,7 +81,7 @@
     </flexiPageRegions>
     <flexiPageRegions>
         <componentInstances>
-            <componentName>AttemptScoreForm</componentName>
+            <componentName>AttemptScoreContainer</componentName>
         </componentInstances>
         <mode>Replace</mode>
         <name>sidebar</name>

@@ -1,0 +1,3 @@
+<aura:event type="COMPONENT" description="Event for firing a toast message after attempt to insert new Attempt_Score__c records." >
+    <aura:attribute name="result" type="String"/>
+</aura:event>

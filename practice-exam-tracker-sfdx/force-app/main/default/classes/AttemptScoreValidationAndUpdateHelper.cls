@@ -33,4 +33,18 @@ public class AttemptScoreValidationAndUpdateHelper {
         return new Map<Id, Exam_Attempt__c>(relatedAttempts);
     }
     
+    public static void preventDuplicates(List<Attempt_Score__c> scores){
+        List<AggregateResult> arList = [SELECT COUNT(Id), Exam_Attempt__c, Exam_Category__c FROM Attempt_Score__c
+                                       GROUP BY Exam_Attempt__c, Exam_Category__c];
+        for(AggregateResult ar : arList){
+            for(Attempt_Score__c score : scores){
+                if(((Id)ar.get('Exam_Attempt__c') == score.Exam_Attempt__c) && ((String)ar.get('Exam_Category__c') == score.Exam_Category__c)){
+                    if((Integer)ar.get('expr0') != null && (Integer)ar.get('expr0') != 0){
+                        score.addError('This attempt already has a score for this category.');
+                    }
+                }
+            }
+        }
+    }
+    
 }
