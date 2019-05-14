@@ -1,7 +1,6 @@
 <aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" controller="AttemptScoreContainerController" >
     <!-- Attributes -->
     <aura:attribute name="scores" type="Attempt_Score__c[]"/>
-    <aura:attribute name="readOnly" type="Boolean" default="true"/>
     
     <!-- Events -->
     <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
@@ -11,12 +10,7 @@
     <lightning:notificationsLibrary aura:id="notifLib"/>
     <div>
         <div>
-            <aura:renderIf isTrue="readOnly">
-                <c:AttemptScoreDisplay scores="{!v.scores}"/>
-                <aura:set attribute="else">
-                    <c:AttemptScoreForm scores="{!v.scores}"/>
-                </aura:set>
-            </aura:renderIf>
+            <c:AttemptScoreForm scores="{!v.scores}"/>
         </div>
     </div>
 </aura:component>

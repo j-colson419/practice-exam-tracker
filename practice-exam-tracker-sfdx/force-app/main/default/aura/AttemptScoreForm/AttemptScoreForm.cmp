@@ -30,19 +30,14 @@
                         <lightning:formattedText value="{!score.Exam_Category__c}"/>
                     </div>
                     <div class="slds-col slds-size_1-of-3"> 
-                        <aura:renderIf isTrue="{!(score.Id != null)}">
-                        	<lightning:input type="Number" value="{!score.Percent__c}" formatter="percent-fixed"/>
-                            <aura:set attribute="else">
-                            	<lightning:formattedNumber style="percent" value="{!score.Percent__c/100}"/>
-                            </aura:set>
-                        </aura:renderIf>
+                        <lightning:input type="Number" value="{!score.Percent__c}" formatter="percent-fixed"/>
                     </div>
                 </div>
             </aura:iteration>
         </div>
         <div class="slds-align_absolute-center">
             <footer class="slds-card__footer">
-                    <lightning:button class="slds-card__footer-action" label="Submit Scores" onclick="{!c.submitScores}"/>
+                <lightning:button class="slds-card__footer-action" label="Submit Scores" onclick="{!c.submitScores}"/>
             </footer>
         </div>
     </div>

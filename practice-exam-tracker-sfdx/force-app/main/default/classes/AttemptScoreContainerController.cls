@@ -1,34 +1,31 @@
 public class AttemptScoreContainerController {
-
+    
     @AuraEnabled
     public static List<Attempt_Score__c> getRelatedScores(Id attemptId){
-        List<Attempt_Score__c> scores = [SELECT Id, Exam_Category__c, Percent__c 
+        Map<String, Attempt_Score__c> scoresMap = new Map<String, Attempt_Score__c>();
+        for (Attempt_Score__c s : [SELECT Id, Exam_Category__c, Percent__c 
                                          FROM Attempt_Score__c 
-                                         WHERE Exam_Attempt__c = :attemptId];
+                                   WHERE Exam_Attempt__c = :attemptId]){
+                                       //populate a map of category names to attemptscore sobjects.
+                                       //then fill in any value that is null with a template sobject.
+                                       scoresMap.put(s.Exam_Category__c, s);
+                                   }
         String examType = getExamTypeFromAttemptId(attemptId);
-        
         List<String> categories = Constants.EXAM_TYPE_TO_CATEGORY_MAP.get(examType);
-       // if(scores == null || scores.size() < categories.size()){
-        if(scores == null || scores.size() == 0){
-            scores = getAttemptScoreTemplatesForExamType(examType, attemptId);
+        for(String s : categories){
+            if(scoresMap.get(s) == null){
+                scoresMap.put(s, new Attempt_Score__c(Exam_Attempt__c = attemptId, Exam_Category__c = s));
+            }
         }
-        return scores;
+        return scoresMap.values();
     }
     
     @AuraEnabled
     public static String getExamTypeFromAttemptId(Id attemptId){
-    	String examType = [SELECT Exam_Type__c FROM Exam_Attempt__c WHERE Id = :attemptId LIMIT 1].Exam_Type__c;
+        String examType = [SELECT Exam_Type__c FROM Exam_Attempt__c WHERE Id = :attemptId LIMIT 1].Exam_Type__c;
         return examType;
     }
     
-    @AuraEnabled
-    public static List<Attempt_Score__c> getAttemptScoreTemplatesForExamType(String examType, Id attemptId){
-        List<Attempt_Score__c> scores = new List<Attempt_Score__c>();
-        for(String s : Constants.EXAM_TYPE_TO_CATEGORY_MAP.get(examType)){
-            Attempt_Score__c score = new Attempt_Score__c(Id = null, Exam_Attempt__c = attemptId, Exam_Category__c = s, Percent__c = null);
-            scores.add(score);
-        }
-        return scores;
-    }
+
     
 }

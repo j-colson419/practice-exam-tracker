@@ -1,9 +1,9 @@
 public class AttemptScoreFormController {
 
     @AuraEnabled
-    public static void insertAttemptScores(List<Attempt_Score__c> scores){
+    public static void upsertAttemptScores(List<Attempt_Score__c> scores){
         try{
-            insert scores;
+            upsert scores;
         } catch (Exception e){
             System.debug('Something went wrong while trying to insert new attempt scores.');
         }

@@ -1,7 +1,7 @@
 ({
     submitScores : function(component, event, helper){
         var scores = component.get("v.scores");
-        var action = component.get("c.insertAttemptScores");
+        var action = component.get("c.upsertAttemptScores");
         action.setParams({
             "scores" : scores
         });
@@ -9,7 +9,6 @@
             var state = response.getState();
             var resultString;
             if(state == 'SUCCESS' && component.isValid){
-                console.log('SUCCESS!!!!!!');
                 resultString = 'Success';
             } else {
                 console.log('Something went wrong while trying to create new Attempt Score records.');
