@@ -11,7 +11,7 @@
     <lightning:notificationsLibrary aura:id="notifLib"/>
     <div>
         <div>
-            <aura:renderIf isTrue="{!v.readOnly}">
+            <aura:renderIf isTrue="readOnly">
                 <c:AttemptScoreDisplay scores="{!v.scores}"/>
                 <aura:set attribute="else">
                     <c:AttemptScoreForm scores="{!v.scores}"/>

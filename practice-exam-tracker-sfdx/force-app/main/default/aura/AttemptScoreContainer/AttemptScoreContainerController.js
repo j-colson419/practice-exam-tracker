@@ -8,7 +8,9 @@
             var state = response.getState();
             if(state == 'SUCCESS' && component.isValid){
                 component.set('v.scores', response.getReturnValue());
-                component.set('v.readOnly', (response.getReturnValue()[0].id != null && response.getReturnValue()[0].id != undefined));
+                component.set('v.readOnly', (response.getReturnValue()[0].Id != null && response.getReturnValue()[0].Id != undefined));
+                console.log(response.getReturnValue()[0]);
+                console.log(component.get('v.readOnly'));
             } else {
                 console.log('Something went wrong while trying to get related scores from the server.');
             }

@@ -30,7 +30,7 @@
                         <lightning:formattedText value="{!score.Exam_Category__c}"/>
                     </div>
                     <div class="slds-col slds-size_1-of-3"> 
-                        <lightning:formattedNumber style="percent" value="{!score.Percent__c}"/>
+                        <lightning:formattedNumber style="percent" value="{!score.Percent__c/100}"/>
                     </div>
                 </div>
             </aura:iteration>
