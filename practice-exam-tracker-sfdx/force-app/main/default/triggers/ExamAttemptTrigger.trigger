@@ -1,4 +1,4 @@
-trigger ExamAttemptTrigger on Exam_Attempt__c (before insert, before update, after insert, after update) {
+trigger ExamAttemptTrigger on Exam_Attempt__c (before insert, before update, before delete, after insert, after update, after delete, after undelete) {
     
     
     if(Trigger.isBefore && (Trigger.isInsert || Trigger.isUpdate)){

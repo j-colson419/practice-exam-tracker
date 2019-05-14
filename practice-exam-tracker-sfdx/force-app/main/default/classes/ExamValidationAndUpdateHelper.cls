@@ -67,6 +67,11 @@ public class ExamValidationAndUpdateHelper {
             }
             associatesToUpdate.add(a);
         }
+        try {
+            update associatesToUpdate;
+        } catch (Exception e){
+            System.debug('Something went wrong while trying to update the certification status of an Associate record.');
+        }
     }
     
     public static void updateExamAttemptOverallScore(Set<ID> attemptIds){
