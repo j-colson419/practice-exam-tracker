@@ -18,7 +18,7 @@ public class ExamValidationAndUpdateTest {
     public static void updateExamAttemptDaysSinceStartSinglePosTest(){
         List<Contact> associates = [SELECT Id FROM Contact];
         //Test
-		List<Exam_Attempt__c> attempts = TestDataFactory.createExamAttempts(associates, true, Date.newInstance(2019, 01, 02));
+		List<Exam_Attempt__c> attempts = PETTestDataFactory.createExamAttempts(associates, true, Date.newInstance(2019, 01, 02));
         insert attempts;
         
         //Assertions
@@ -32,10 +32,10 @@ public class ExamValidationAndUpdateTest {
     public static void updateExamAttemptOverallScoreSinglePosTest(){
         List<Contact> associates = [SELECT Id FROM Contact];
         //create exam attempt
-        List<Exam_Attempt__c> attempts = TestDataFactory.createExamAttempts(associates, true, Date.newInstance(2019, 01, 03));
+        List<Exam_Attempt__c> attempts = PETTestDataFactory.createExamAttempts(associates, true, Date.newInstance(2019, 01, 03));
         insert attempts;
 
-        List<Attempt_Score__c> scoresForAttempt = TestDataFactory.createExamAttemptScores(attempts);
+        List<Attempt_Score__c> scoresForAttempt = PETTestDataFactory.createExamAttemptScores(attempts);
         insert scoresForAttempt;
         System.debug([SELECT Count() FROM Attempt_Score__c]);
         
@@ -49,10 +49,10 @@ public class ExamValidationAndUpdateTest {
     public static void updateAssociateCertificationStatusSinglePosTest(){
         List<Contact> associates = [SELECT Id FROM Contact];
         //create exam attempt
-        List<Exam_Attempt__c> attempts = TestDataFactory.createExamAttempts(associates, false, Date.newInstance(2019, 01, 03));
+        List<Exam_Attempt__c> attempts = PETTestDataFactory.createExamAttempts(associates, false, Date.newInstance(2019, 01, 03));
         insert attempts;
 		//create attempt scores
-        List<Attempt_Score__c> scoresForAttempt = TestDataFactory.createExamAttemptScores(attempts, true);
+        List<Attempt_Score__c> scoresForAttempt = PETTestDataFactory.createExamAttemptScores(attempts, true);
         insert scoresForAttempt;
         
         associates = [SELECT Id, Admin_Certified__c, PD1_Certified__c FROM Contact];

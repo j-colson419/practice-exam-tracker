@@ -13,7 +13,7 @@ public class AttemptScoreValidationAndUpdateTest {
         List<Batch_Assignment__c> assignments = TestDataFactory.createBatchAssignments(associates, batches[0]);
         insert assignments;
         //create an exam attempt for that associate.
-        List<Exam_Attempt__c> attempts = TestDataFactory.createExamAttempts(associates, true, Date.newInstance(2019, 01, 05));
+        List<Exam_Attempt__c> attempts = PETTestDataFactory.createExamAttempts(associates, true, Date.newInstance(2019, 01, 05));
         insert attempts;
     }   
     
