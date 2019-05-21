@@ -3,6 +3,12 @@
     {
       "path": "force-app",
       "default": true
+    },
+    {
+      "path": "ooo-app"
+    },
+    {
+      "path": "pet-app"
     }
   ],
   "namespace": "",
