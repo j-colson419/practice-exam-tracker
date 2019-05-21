@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PD1_Practice_Attempts</fullName>
+    <columns>NAME</columns>
+    <columns>Attempt_Date__c</columns>
+    <columns>Associate__c</columns>
+    <columns>Practice_Exam_Version__c</columns>
+    <columns>Attempt_Number__c</columns>
+    <columns>Pass__c</columns>
+    <columns>Overall_Score__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>Exam_Type__c</field>
+        <operation>equals</operation>
+        <value>PD1</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Exam_Attempt__c.Practice</value>
+    </filters>
+    <label>PD1 Practice Attempts</label>
+</ListView>
