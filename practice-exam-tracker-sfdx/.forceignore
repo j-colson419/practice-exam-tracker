@@ -14,5 +14,5 @@ package.xml
 #profiles
 **profiles
 
-# other apps
+##other apps
 pet-app
