@@ -1,11 +1,11 @@
 {
   "packageDirectories": [
     {
-      "path": "force-app",
-      "default": true
+      "path": "force-app"
     },
     {
-      "path": "ooo-app"
+      "path": "ooo-app",
+      "default": true
     },
     {
       "path": "pet-app"

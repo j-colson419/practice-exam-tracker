@@ -11,6 +11,5 @@ package.xml
 # LWC Jest
 **/__tests__/**
 
-# layouts, profiles
-**layouts
+#profiles
 **profiles
