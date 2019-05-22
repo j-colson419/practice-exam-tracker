@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Week_Start_Date__c</fullName>
+    <description>Calculates the date of the Monday of the specified number of weeks after the batch start date.</description>
+    <externalId>false</externalId>
+    <formula>( Batch__r.Start_Date__c + ( Week_Number__c * 7 ) ) + ( 1 - MOD( ( Batch__r.Start_Date__c + ( Week_Number__c * 7 ) ) - DATE( 1900, 1, 7 ), 7 ) )
++
+IF( 
+  MOD( ( Batch__r.Start_Date__c + ( Week_Number__c * 7 ) ) - DATE( 1900, 1, 7 ), 7 ) &gt; 1,
+  7,
+  0
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Week Start Date</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>
