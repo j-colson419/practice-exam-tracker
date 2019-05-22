@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Question_Title_Or_Detail_Not_Empty</fullName>
+    <active>true</active>
+    <description>Ensures that at least one of the Question Title or Question Detail fields are not empty.</description>
+    <errorConditionFormula>ISBLANK( Question_Title__c ) &amp;&amp;  ISBLANK( Question_Detail__c )</errorConditionFormula>
+    <errorMessage>You must provide a value for either the Question Title or the Question Detail field. Both cannot be blank.</errorMessage>
+</ValidationRule>

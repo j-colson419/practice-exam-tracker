@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Advanced Apex</fullName>
+        <default>false</default>
+        <label>Advanced Apex</label>
+    </customValue>
+    <customValue>
+        <fullName>Apex</fullName>
+        <default>false</default>
+        <label>Apex</label>
+    </customValue>
+    <customValue>
+        <fullName>Apex Testing Framework</fullName>
+        <default>false</default>
+        <label>Apex Testing Framework</label>
+    </customValue>
+    <customValue>
+        <fullName>CSS</fullName>
+        <default>false</default>
+        <label>CSS</label>
+    </customValue>
+    <customValue>
+        <fullName>HTML</fullName>
+        <default>false</default>
+        <label>HTML</label>
+    </customValue>
+    <customValue>
+        <fullName>JavaScript</fullName>
+        <default>false</default>
+        <label>JavaScript</label>
+    </customValue>
+    <customValue>
+        <fullName>Lightning Component Framework</fullName>
+        <default>false</default>
+        <label>Lightning Component Framework</label>
+    </customValue>
+    <customValue>
+        <fullName>Object-Oriented Programming</fullName>
+        <default>false</default>
+        <label>Object-Oriented Programming</label>
+    </customValue>
+    <customValue>
+        <fullName>Sales Cloud</fullName>
+        <default>false</default>
+        <label>Sales Cloud</label>
+    </customValue>
+    <customValue>
+        <fullName>Salesforce Data Management</fullName>
+        <default>false</default>
+        <label>Salesforce Data Management</label>
+    </customValue>
+    <customValue>
+        <fullName>Salesforce Data Modeling</fullName>
+        <default>false</default>
+        <label>Salesforce Data Modeling</label>
+    </customValue>
+    <customValue>
+        <fullName>Salesforce Deployment</fullName>
+        <default>false</default>
+        <label>Salesforce Deployment</label>
+    </customValue>
+    <customValue>
+        <fullName>Salesforce Fundamentals</fullName>
+        <default>false</default>
+        <label>Salesforce Fundamentals</label>
+    </customValue>
+    <customValue>
+        <fullName>Salesforce Logging</fullName>
+        <default>false</default>
+        <label>Salesforce Logging</label>
+    </customValue>
+    <customValue>
+        <fullName>Salesforce Mobile Apps &amp; External Email Services</fullName>
+        <default>false</default>
+        <label>Salesforce Mobile Apps &amp; External Email Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Salesforce Process Automation</fullName>
+        <default>false</default>
+        <label>Salesforce Process Automation</label>
+    </customValue>
+    <customValue>
+        <fullName>Salesforce Security</fullName>
+        <default>false</default>
+        <label>Salesforce Security</label>
+    </customValue>
+    <customValue>
+        <fullName>Salesforce Web Services &amp; Integration</fullName>
+        <default>false</default>
+        <label>Salesforce Web Services &amp; Integration</label>
+    </customValue>
+    <customValue>
+        <fullName>Service Cloud</fullName>
+        <default>false</default>
+        <label>Service Cloud</label>
+    </customValue>
+    <customValue>
+        <fullName>SFDX</fullName>
+        <default>false</default>
+        <label>SFDX</label>
+    </customValue>
+    <customValue>
+        <fullName>Software Development Life Cycle</fullName>
+        <default>false</default>
+        <label>Software Development Life Cycle</label>
+    </customValue>
+    <customValue>
+        <fullName>SOQL</fullName>
+        <default>false</default>
+        <label>SOQL</label>
+    </customValue>
+    <customValue>
+        <fullName>SOSL</fullName>
+        <default>false</default>
+        <label>SOSL</label>
+    </customValue>
+    <customValue>
+        <fullName>Visualforce</fullName>
+        <default>false</default>
+        <label>Visualforce</label>
+    </customValue>
+    <masterLabel>Question Topics</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

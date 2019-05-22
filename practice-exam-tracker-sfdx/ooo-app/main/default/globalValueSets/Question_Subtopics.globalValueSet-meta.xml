@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Accounts &amp; Contacts</fullName>
+        <default>false</default>
+        <label>Accounts &amp; Contacts</label>
+    </customValue>
+    <customValue>
+        <fullName>Actions</fullName>
+        <default>false</default>
+        <label>Actions</label>
+    </customValue>
+    <customValue>
+        <fullName>Activities</fullName>
+        <default>false</default>
+        <label>Activities</label>
+    </customValue>
+    <customValue>
+        <fullName>Answers</fullName>
+        <default>false</default>
+        <label>Answers</label>
+    </customValue>
+    <customValue>
+        <fullName>Approval Process</fullName>
+        <default>false</default>
+        <label>Approval Process</label>
+    </customValue>
+    <customValue>
+        <fullName>Assets</fullName>
+        <default>false</default>
+        <label>Assets</label>
+    </customValue>
+    <customValue>
+        <fullName>Assignment Rules</fullName>
+        <default>false</default>
+        <label>Assignment Rules</label>
+    </customValue>
+    <customValue>
+        <fullName>Auto-Response Rules</fullName>
+        <default>false</default>
+        <label>Auto-Response Rules</label>
+    </customValue>
+    <customValue>
+        <fullName>Business Hours</fullName>
+        <default>false</default>
+        <label>Business Hours</label>
+    </customValue>
+    <customValue>
+        <fullName>Campaign Management</fullName>
+        <default>false</default>
+        <label>Campaign Management</label>
+    </customValue>
+    <customValue>
+        <fullName>Case Management &amp; Automation</fullName>
+        <default>false</default>
+        <label>Case Management &amp; Automation</label>
+    </customValue>
+    <customValue>
+        <fullName>Chatter</fullName>
+        <default>false</default>
+        <label>Chatter</label>
+    </customValue>
+    <customValue>
+        <fullName>Company Information</fullName>
+        <default>false</default>
+        <label>Company Information</label>
+    </customValue>
+    <customValue>
+        <fullName>CRM</fullName>
+        <default>false</default>
+        <label>CRM</label>
+    </customValue>
+    <customValue>
+        <fullName>Currency Management</fullName>
+        <default>false</default>
+        <label>Currency Management</label>
+    </customValue>
+    <customValue>
+        <fullName>Data Export Wizard</fullName>
+        <default>false</default>
+        <label>Data Export Wizard</label>
+    </customValue>
+    <customValue>
+        <fullName>Data Import Wizard</fullName>
+        <default>false</default>
+        <label>Data Import Wizard</label>
+    </customValue>
+    <customValue>
+        <fullName>Data Loader</fullName>
+        <default>false</default>
+        <label>Data Loader</label>
+    </customValue>
+    <customValue>
+        <fullName>Data Validation Tools</fullName>
+        <default>false</default>
+        <label>Data Validation Tools</label>
+    </customValue>
+    <customValue>
+        <fullName>Duplicate Management</fullName>
+        <default>false</default>
+        <label>Duplicate Management</label>
+    </customValue>
+    <customValue>
+        <fullName>ERD</fullName>
+        <default>false</default>
+        <label>ERD</label>
+    </customValue>
+    <customValue>
+        <fullName>Escalation Rules</fullName>
+        <default>false</default>
+        <label>Escalation Rules</label>
+    </customValue>
+    <customValue>
+        <fullName>Events</fullName>
+        <default>false</default>
+        <label>Events</label>
+    </customValue>
+    <customValue>
+        <fullName>Exporting Data</fullName>
+        <default>false</default>
+        <label>Exporting Data</label>
+    </customValue>
+    <customValue>
+        <fullName>Field History Tracking</fullName>
+        <default>false</default>
+        <label>Field History Tracking</label>
+    </customValue>
+    <customValue>
+        <fullName>Field Restrictions</fullName>
+        <default>false</default>
+        <label>Field Restrictions</label>
+    </customValue>
+    <customValue>
+        <fullName>Fields</fullName>
+        <default>false</default>
+        <label>Fields</label>
+    </customValue>
+    <customValue>
+        <fullName>Field Types</fullName>
+        <default>false</default>
+        <label>Field Types</label>
+    </customValue>
+    <customValue>
+        <fullName>Fiscal Year</fullName>
+        <default>false</default>
+        <label>Fiscal Year</label>
+    </customValue>
+    <customValue>
+        <fullName>Force.com Platform</fullName>
+        <default>false</default>
+        <label>Force.com Platform</label>
+    </customValue>
+    <customValue>
+        <fullName>Governor Limits</fullName>
+        <default>false</default>
+        <label>Governor Limits</label>
+    </customValue>
+    <customValue>
+        <fullName>Ideas</fullName>
+        <default>false</default>
+        <label>Ideas</label>
+    </customValue>
+    <customValue>
+        <fullName>Importing Data</fullName>
+        <default>false</default>
+        <label>Importing Data</label>
+    </customValue>
+    <customValue>
+        <fullName>Knowledge</fullName>
+        <default>false</default>
+        <label>Knowledge</label>
+    </customValue>
+    <customValue>
+        <fullName>Lead Management &amp; Automation</fullName>
+        <default>false</default>
+        <label>Lead Management &amp; Automation</label>
+    </customValue>
+    <customValue>
+        <fullName>Lightning App Builder</fullName>
+        <default>false</default>
+        <label>Lightning App Builder</label>
+    </customValue>
+    <customValue>
+        <fullName>Lightning Flows</fullName>
+        <default>false</default>
+        <label>Lightning Flows</label>
+    </customValue>
+    <customValue>
+        <fullName>List Views</fullName>
+        <default>false</default>
+        <label>List Views</label>
+    </customValue>
+    <customValue>
+        <fullName>Locale</fullName>
+        <default>false</default>
+        <label>Locale</label>
+    </customValue>
+    <customValue>
+        <fullName>Login Hours</fullName>
+        <default>false</default>
+        <label>Login Hours</label>
+    </customValue>
+    <customValue>
+        <fullName>Login IP Ranges</fullName>
+        <default>false</default>
+        <label>Login IP Ranges</label>
+    </customValue>
+    <customValue>
+        <fullName>Manual Sharing</fullName>
+        <default>false</default>
+        <label>Manual Sharing</label>
+    </customValue>
+    <customValue>
+        <fullName>Multitenancy</fullName>
+        <default>false</default>
+        <label>Multitenancy</label>
+    </customValue>
+    <customValue>
+        <fullName>MVC Design Pattern</fullName>
+        <default>false</default>
+        <label>MVC Design Pattern</label>
+    </customValue>
+    <customValue>
+        <fullName>Opportunity Management</fullName>
+        <default>false</default>
+        <label>Opportunity Management</label>
+    </customValue>
+    <customValue>
+        <fullName>Organization-Wide Defaults</fullName>
+        <default>false</default>
+        <label>Organization-Wide Defaults</label>
+    </customValue>
+    <customValue>
+        <fullName>Org Level Security</fullName>
+        <default>false</default>
+        <label>Org Level Security</label>
+    </customValue>
+    <customValue>
+        <fullName>PaaS</fullName>
+        <default>false</default>
+        <label>PaaS</label>
+    </customValue>
+    <customValue>
+        <fullName>Page Layouts</fullName>
+        <default>false</default>
+        <label>Page Layouts</label>
+    </customValue>
+    <customValue>
+        <fullName>Permission Sets</fullName>
+        <default>false</default>
+        <label>Permission Sets</label>
+    </customValue>
+    <customValue>
+        <fullName>Process Builder</fullName>
+        <default>false</default>
+        <label>Process Builder</label>
+    </customValue>
+    <customValue>
+        <fullName>Products &amp; Pricebooks</fullName>
+        <default>false</default>
+        <label>Products &amp; Pricebooks</label>
+    </customValue>
+    <customValue>
+        <fullName>Profiles</fullName>
+        <default>false</default>
+        <label>Profiles</label>
+    </customValue>
+    <customValue>
+        <fullName>Public Groups</fullName>
+        <default>false</default>
+        <label>Public Groups</label>
+    </customValue>
+    <customValue>
+        <fullName>Queues</fullName>
+        <default>false</default>
+        <label>Queues</label>
+    </customValue>
+    <customValue>
+        <fullName>Record Level Security</fullName>
+        <default>false</default>
+        <label>Record Level Security</label>
+    </customValue>
+    <customValue>
+        <fullName>Record Types</fullName>
+        <default>false</default>
+        <label>Record Types</label>
+    </customValue>
+    <customValue>
+        <fullName>Reports &amp; Dashboards</fullName>
+        <default>false</default>
+        <label>Reports &amp; Dashboards</label>
+    </customValue>
+    <customValue>
+        <fullName>Role Hierarchy</fullName>
+        <default>false</default>
+        <label>Role Hierarchy</label>
+    </customValue>
+    <customValue>
+        <fullName>SaaS</fullName>
+        <default>false</default>
+        <label>SaaS</label>
+    </customValue>
+    <customValue>
+        <fullName>Salesforce</fullName>
+        <default>false</default>
+        <label>Salesforce</label>
+    </customValue>
+    <customValue>
+        <fullName>Salesforce Apps</fullName>
+        <default>false</default>
+        <label>Salesforce Apps</label>
+    </customValue>
+    <customValue>
+        <fullName>Salesforce IDs</fullName>
+        <default>false</default>
+        <label>Salesforce IDs</label>
+    </customValue>
+    <customValue>
+        <fullName>Salesforce Object Relationships</fullName>
+        <default>false</default>
+        <label>Salesforce Object Relationships</label>
+    </customValue>
+    <customValue>
+        <fullName>Salesforce Objects</fullName>
+        <default>false</default>
+        <label>Salesforce Objects</label>
+    </customValue>
+    <customValue>
+        <fullName>Schema Builder</fullName>
+        <default>false</default>
+        <label>Schema Builder</label>
+    </customValue>
+    <customValue>
+        <fullName>Sharing Rules</fullName>
+        <default>false</default>
+        <label>Sharing Rules</label>
+    </customValue>
+    <customValue>
+        <fullName>Standard Objects</fullName>
+        <default>false</default>
+        <label>Standard Objects</label>
+    </customValue>
+    <customValue>
+        <fullName>Tasks</fullName>
+        <default>false</default>
+        <label>Tasks</label>
+    </customValue>
+    <customValue>
+        <fullName>Teams</fullName>
+        <default>false</default>
+        <label>Teams</label>
+    </customValue>
+    <customValue>
+        <fullName>Trusted IP Ranges</fullName>
+        <default>false</default>
+        <label>Trusted IP Ranges</label>
+    </customValue>
+    <customValue>
+        <fullName>User Deactivation &amp; Freezing</fullName>
+        <default>false</default>
+        <label>User Deactivation &amp; Freezing</label>
+    </customValue>
+    <customValue>
+        <fullName>User Licenses</fullName>
+        <default>false</default>
+        <label>User Licenses</label>
+    </customValue>
+    <customValue>
+        <fullName>User Object</fullName>
+        <default>false</default>
+        <label>User Object</label>
+    </customValue>
+    <customValue>
+        <fullName>Validation Rules</fullName>
+        <default>false</default>
+        <label>Validation Rules</label>
+    </customValue>
+    <customValue>
+        <fullName>Workflow Actions</fullName>
+        <default>false</default>
+        <label>Workflow Actions</label>
+    </customValue>
+    <customValue>
+        <fullName>Workflow Rules</fullName>
+        <default>false</default>
+        <label>Workflow Rules</label>
+    </customValue>
+    <masterLabel>Question Subtopics</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

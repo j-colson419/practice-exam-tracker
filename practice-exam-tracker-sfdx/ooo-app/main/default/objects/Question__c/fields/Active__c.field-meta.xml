@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Active__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Determines if the question can be used. If unchecked (false), this indicates that the question is either in development and shouldn&#39;t be used until marked active, or the question is outdated and has been deactivated to prevent further use.</description>
+    <externalId>false</externalId>
+    <label>Active</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

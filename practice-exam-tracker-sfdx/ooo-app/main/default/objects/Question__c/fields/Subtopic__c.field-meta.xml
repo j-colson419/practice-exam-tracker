@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Subtopic__c</fullName>
+    <externalId>false</externalId>
+    <label>Subtopic</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <controllingField>Topic1__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>Question_Subtopics</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>Salesforce Data Modeling</controllingFieldValue>
+            <controllingFieldValue>Salesforce Fundamentals</controllingFieldValue>
+            <controllingFieldValue>Service Cloud</controllingFieldValue>
+            <controllingFieldValue>Sales Cloud</controllingFieldValue>
+            <valueName>Accounts &amp; Contacts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce Data Modeling</controllingFieldValue>
+            <controllingFieldValue>Salesforce Fundamentals</controllingFieldValue>
+            <controllingFieldValue>Service Cloud</controllingFieldValue>
+            <valueName>Activities</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce Data Modeling</controllingFieldValue>
+            <controllingFieldValue>Salesforce Fundamentals</controllingFieldValue>
+            <controllingFieldValue>Service Cloud</controllingFieldValue>
+            <controllingFieldValue>Sales Cloud</controllingFieldValue>
+            <valueName>Assets</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce Data Modeling</controllingFieldValue>
+            <controllingFieldValue>Salesforce Process Automation</controllingFieldValue>
+            <controllingFieldValue>Sales Cloud</controllingFieldValue>
+            <valueName>Campaign Management</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce Data Modeling</controllingFieldValue>
+            <controllingFieldValue>Salesforce Process Automation</controllingFieldValue>
+            <controllingFieldValue>Service Cloud</controllingFieldValue>
+            <valueName>Case Management &amp; Automation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce Data Modeling</controllingFieldValue>
+            <controllingFieldValue>Salesforce Fundamentals</controllingFieldValue>
+            <valueName>ERD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce Data Modeling</controllingFieldValue>
+            <controllingFieldValue>Salesforce Fundamentals</controllingFieldValue>
+            <controllingFieldValue>Service Cloud</controllingFieldValue>
+            <valueName>Events</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce Data Modeling</controllingFieldValue>
+            <valueName>Field History Tracking</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce Data Modeling</controllingFieldValue>
+            <controllingFieldValue>Salesforce Security</controllingFieldValue>
+            <controllingFieldValue>Salesforce Data Management</controllingFieldValue>
+            <valueName>Field Restrictions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce Data Modeling</controllingFieldValue>
+            <controllingFieldValue>Salesforce Security</controllingFieldValue>
+            <controllingFieldValue>Salesforce Data Management</controllingFieldValue>
+            <valueName>Fields</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce Data Modeling</controllingFieldValue>
+            <controllingFieldValue>Salesforce Data Management</controllingFieldValue>
+            <valueName>Field Types</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce Data Modeling</controllingFieldValue>
+            <controllingFieldValue>Salesforce Process Automation</controllingFieldValue>
+            <controllingFieldValue>Sales Cloud</controllingFieldValue>
+            <valueName>Lead Management &amp; Automation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce Data Modeling</controllingFieldValue>
+            <controllingFieldValue>Salesforce Process Automation</controllingFieldValue>
+            <controllingFieldValue>Sales Cloud</controllingFieldValue>
+            <valueName>Opportunity Management</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce Data Modeling</controllingFieldValue>
+            <controllingFieldValue>Salesforce Fundamentals</controllingFieldValue>
+            <controllingFieldValue>Sales Cloud</controllingFieldValue>
+            <valueName>Products &amp; Pricebooks</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce Data Modeling</controllingFieldValue>
+            <controllingFieldValue>Salesforce Security</controllingFieldValue>
+            <controllingFieldValue>Sales Cloud</controllingFieldValue>
+            <valueName>Record Types</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce Data Modeling</controllingFieldValue>
+            <controllingFieldValue>SOQL</controllingFieldValue>
+            <controllingFieldValue>Salesforce Deployment</controllingFieldValue>
+            <controllingFieldValue>SOSL</controllingFieldValue>
+            <controllingFieldValue>Salesforce Fundamentals</controllingFieldValue>
+            <controllingFieldValue>Visualforce</controllingFieldValue>
+            <controllingFieldValue>Salesforce Logging</controllingFieldValue>
+            <controllingFieldValue>Salesforce Mobile Apps &amp; External Email Services</controllingFieldValue>
+            <controllingFieldValue>Salesforce Process Automation</controllingFieldValue>
+            <controllingFieldValue>Salesforce Security</controllingFieldValue>
+            <controllingFieldValue>Salesforce Web Services &amp; Integration</controllingFieldValue>
+            <controllingFieldValue>Service Cloud</controllingFieldValue>
+            <controllingFieldValue>Advanced Apex</controllingFieldValue>
+            <controllingFieldValue>Apex</controllingFieldValue>
+            <controllingFieldValue>Apex Testing Framework</controllingFieldValue>
+            <controllingFieldValue>CSS</controllingFieldValue>
+            <controllingFieldValue>HTML</controllingFieldValue>
+            <controllingFieldValue>JavaScript</controllingFieldValue>
+            <controllingFieldValue>Lightning Component Framework</controllingFieldValue>
+            <controllingFieldValue>Object-Oriented Programming</controllingFieldValue>
+            <controllingFieldValue>Sales Cloud</controllingFieldValue>
+            <controllingFieldValue>SFDX</controllingFieldValue>
+            <controllingFieldValue>Salesforce Data Management</controllingFieldValue>
+            <controllingFieldValue>Software Development Life Cycle</controllingFieldValue>
+            <valueName>Salesforce</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce Data Modeling</controllingFieldValue>
+            <controllingFieldValue>Salesforce Fundamentals</controllingFieldValue>
+            <controllingFieldValue>Salesforce Security</controllingFieldValue>
+            <controllingFieldValue>Service Cloud</controllingFieldValue>
+            <valueName>Salesforce Apps</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce Data Modeling</controllingFieldValue>
+            <controllingFieldValue>Salesforce Fundamentals</controllingFieldValue>
+            <controllingFieldValue>Salesforce Data Management</controllingFieldValue>
+            <valueName>Salesforce IDs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce Data Modeling</controllingFieldValue>
+            <controllingFieldValue>Salesforce Security</controllingFieldValue>
+            <controllingFieldValue>Service Cloud</controllingFieldValue>
+            <controllingFieldValue>Sales Cloud</controllingFieldValue>
+            <controllingFieldValue>Salesforce Data Management</controllingFieldValue>
+            <valueName>Salesforce Object Relationships</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce Data Modeling</controllingFieldValue>
+            <controllingFieldValue>Salesforce Fundamentals</controllingFieldValue>
+            <controllingFieldValue>Service Cloud</controllingFieldValue>
+            <controllingFieldValue>Sales Cloud</controllingFieldValue>
+            <controllingFieldValue>Salesforce Data Management</controllingFieldValue>
+            <valueName>Salesforce Objects</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce Data Modeling</controllingFieldValue>
+            <controllingFieldValue>Salesforce Fundamentals</controllingFieldValue>
+            <valueName>Schema Builder</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce Data Modeling</controllingFieldValue>
+            <controllingFieldValue>Salesforce Fundamentals</controllingFieldValue>
+            <controllingFieldValue>Service Cloud</controllingFieldValue>
+            <controllingFieldValue>Sales Cloud</controllingFieldValue>
+            <controllingFieldValue>Salesforce Data Management</controllingFieldValue>
+            <valueName>Standard Objects</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce Data Modeling</controllingFieldValue>
+            <controllingFieldValue>Salesforce Fundamentals</controllingFieldValue>
+            <controllingFieldValue>Salesforce Process Automation</controllingFieldValue>
+            <controllingFieldValue>Service Cloud</controllingFieldValue>
+            <valueName>Tasks</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce Data Modeling</controllingFieldValue>
+            <controllingFieldValue>Salesforce Fundamentals</controllingFieldValue>
+            <controllingFieldValue>Salesforce Security</controllingFieldValue>
+            <valueName>User Object</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce Data Modeling</controllingFieldValue>
+            <controllingFieldValue>Salesforce Process Automation</controllingFieldValue>
+            <controllingFieldValue>Salesforce Data Management</controllingFieldValue>
+            <valueName>Validation Rules</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce Fundamentals</controllingFieldValue>
+            <controllingFieldValue>Salesforce Process Automation</controllingFieldValue>
+            <valueName>Actions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce Fundamentals</controllingFieldValue>
+            <controllingFieldValue>Service Cloud</controllingFieldValue>
+            <valueName>Business Hours</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce Fundamentals</controllingFieldValue>
+            <valueName>Chatter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce Fundamentals</controllingFieldValue>
+            <valueName>Company Information</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce Fundamentals</controllingFieldValue>
+            <controllingFieldValue>Service Cloud</controllingFieldValue>
+            <controllingFieldValue>Sales Cloud</controllingFieldValue>
+            <valueName>CRM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce Fundamentals</controllingFieldValue>
+            <valueName>Currency Management</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce Fundamentals</controllingFieldValue>
+            <valueName>Force.com Platform</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce Fundamentals</controllingFieldValue>
+            <valueName>Governor Limits</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce Fundamentals</controllingFieldValue>
+            <valueName>Lightning App Builder</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce Fundamentals</controllingFieldValue>
+            <valueName>List Views</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce Fundamentals</controllingFieldValue>
+            <controllingFieldValue>Salesforce Process Automation</controllingFieldValue>
+            <controllingFieldValue>Service Cloud</controllingFieldValue>
+            <valueName>Locale</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce Fundamentals</controllingFieldValue>
+            <controllingFieldValue>Salesforce Security</controllingFieldValue>
+            <valueName>Multitenancy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce Fundamentals</controllingFieldValue>
+            <valueName>MVC Design Pattern</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce Fundamentals</controllingFieldValue>
+            <valueName>PaaS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce Fundamentals</controllingFieldValue>
+            <controllingFieldValue>Salesforce Security</controllingFieldValue>
+            <valueName>Page Layouts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce Fundamentals</controllingFieldValue>
+            <controllingFieldValue>Salesforce Process Automation</controllingFieldValue>
+            <valueName>Reports &amp; Dashboards</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce Fundamentals</controllingFieldValue>
+            <valueName>SaaS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce Fundamentals</controllingFieldValue>
+            <controllingFieldValue>Salesforce Security</controllingFieldValue>
+            <valueName>User Deactivation &amp; Freezing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce Fundamentals</controllingFieldValue>
+            <controllingFieldValue>Salesforce Security</controllingFieldValue>
+            <valueName>User Licenses</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce Process Automation</controllingFieldValue>
+            <valueName>Approval Process</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce Process Automation</controllingFieldValue>
+            <controllingFieldValue>Service Cloud</controllingFieldValue>
+            <controllingFieldValue>Sales Cloud</controllingFieldValue>
+            <valueName>Assignment Rules</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce Process Automation</controllingFieldValue>
+            <controllingFieldValue>Service Cloud</controllingFieldValue>
+            <controllingFieldValue>Sales Cloud</controllingFieldValue>
+            <valueName>Auto-Response Rules</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce Process Automation</controllingFieldValue>
+            <controllingFieldValue>Salesforce Data Management</controllingFieldValue>
+            <valueName>Data Validation Tools</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce Process Automation</controllingFieldValue>
+            <controllingFieldValue>Salesforce Data Management</controllingFieldValue>
+            <valueName>Duplicate Management</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce Process Automation</controllingFieldValue>
+            <valueName>Escalation Rules</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce Process Automation</controllingFieldValue>
+            <valueName>Lightning Flows</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce Process Automation</controllingFieldValue>
+            <controllingFieldValue>Salesforce Data Management</controllingFieldValue>
+            <valueName>Process Builder</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce Process Automation</controllingFieldValue>
+            <valueName>Workflow Actions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce Process Automation</controllingFieldValue>
+            <controllingFieldValue>Salesforce Data Management</controllingFieldValue>
+            <valueName>Workflow Rules</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce Security</controllingFieldValue>
+            <valueName>Login Hours</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce Security</controllingFieldValue>
+            <valueName>Login IP Ranges</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce Security</controllingFieldValue>
+            <valueName>Manual Sharing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce Security</controllingFieldValue>
+            <valueName>Organization-Wide Defaults</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce Security</controllingFieldValue>
+            <valueName>Org Level Security</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce Security</controllingFieldValue>
+            <valueName>Permission Sets</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce Security</controllingFieldValue>
+            <valueName>Profiles</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce Security</controllingFieldValue>
+            <valueName>Public Groups</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce Security</controllingFieldValue>
+            <controllingFieldValue>Service Cloud</controllingFieldValue>
+            <valueName>Queues</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce Security</controllingFieldValue>
+            <valueName>Record Level Security</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce Security</controllingFieldValue>
+            <valueName>Role Hierarchy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce Security</controllingFieldValue>
+            <valueName>Sharing Rules</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce Security</controllingFieldValue>
+            <valueName>Trusted IP Ranges</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Service Cloud</controllingFieldValue>
+            <valueName>Answers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Service Cloud</controllingFieldValue>
+            <valueName>Ideas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Service Cloud</controllingFieldValue>
+            <valueName>Knowledge</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Service Cloud</controllingFieldValue>
+            <controllingFieldValue>Sales Cloud</controllingFieldValue>
+            <valueName>Teams</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce Data Management</controllingFieldValue>
+            <valueName>Data Export Wizard</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce Data Management</controllingFieldValue>
+            <valueName>Data Import Wizard</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce Data Management</controllingFieldValue>
+            <valueName>Data Loader</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce Data Management</controllingFieldValue>
+            <valueName>Exporting Data</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salesforce Data Management</controllingFieldValue>
+            <valueName>Importing Data</valueName>
+        </valueSettings>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>
