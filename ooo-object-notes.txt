@@ -1,0 +1,32 @@
+Information to store:
+	Question
+		- the actual question content (long text or text area)
+		- topic and subtopic (to be able to determine which questions to use in a quiz/interview
+			-- this would be as opposed to weeks, since the curriculum can change so much
+		- whether it's active or not 
+			-- also because the curriculum changes so much
+		+ possibly some key words to look for in an answer, but possibly not.
+		- point value
+			-- for one on ones, to be able to score out of a certain amount
+		+ possibly some accepted answer examples.
+			-- this can help with QC, but also can help others understand what the question is looking for, if unclear.
+	
+	Interview
+		- to represent an instance of an assessment. (whether it be QC or One-on-One)
+			++ possibly have a record type for QC vs One-on-One but maybe not, that is kinda out of scope right now
+		- Date
+		- associate
+		- trainer/question asker
+		- Topics covered
+			-- maybe autopopulated via code based on the questions selected? Or the other way around
+			maybe questions are selected based on these selected topics. 
+		- overall score
+	
+	Notes
+		- can be related to a particular question
+		+ record type for verbal vs technical?
+		- junction object between interview and question.
+		- long text to store the actual note
+		- score to track the score for the particular question or just a verbal evaluation score.
+			-- this would be used to calculate the overall score on the interview
+		
