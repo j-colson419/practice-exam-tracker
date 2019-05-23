@@ -1,0 +1,57 @@
+<aura:component controller="NewWeekFormController" implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction" access="global" >
+    <!--Attributes-->
+    <aura:attribute name="newWeek" type="Week__c" default="{ 'sobjectType': 'Week__c',
+                                                           'Week_Number__c' : '',
+                                                           'Batch__c' : ''
+                                                           }"/>
+    <aura:attribute name="topicOptions" type="List"/>
+    <aura:attribute name="selectedTopics" type="List" />
+    <aura:attribute name="subtopicOptions" type="List"/>
+    <aura:attribute name="selectedSubtopics" type="List" />    
+    <aura:attribute name="recordId" type="String" default="a01L0000007bNc5IAE"/>
+    <!--Events-->
+    <aura:handler name="init" value="{!this}" action="{!c.onInit}"/>
+    
+    <!--Displayed Markup-->
+    <div>
+        <lightning:card title="New Week">
+            <aura:set attribute="actions">
+                <lightning:button label="Create" />
+                <lightning:buttonMenu aura:id="btnMenu" onselect="{!c.handleMenuSelect}" alternativeText="More Actions">
+                    <lightning:menuItem value="ClearForm" label="Clear Form"/>
+                    <lightning:menuItem value="Cancel" label="Cancel"/>
+                </lightning:buttonMenu>
+            </aura:set>
+            <lightning:accordion aura:id="accordian" activeSectionName="BasicInfo">
+                <lightning:accordionSection name="BasicInfo" label="Batch and Week Information">
+                    <lightning:recordViewForm recordId="{!v.recordId}" objectApiName="Batch__c">
+                        <lightning:outputField fieldName="Name"/>
+                        <lightning:outputField fieldName="Start_Date__c"/>
+                    </lightning:recordViewForm>
+                    <lightning:input type="Number" label="Week Number" value="{!v.newWeek.Week_Number__c}" onchange="{!c.changeToTopicsStep}"/>
+                </lightning:accordionSection>
+                <lightning:accordionSection name="TopicSelection" label="Topic Selection">
+                    <lightning:dualListbox name="topics"
+                                           label="Topics"
+                                           sourceLabel="Available"
+                                           selectedLabel="Covered"
+                                           options="{!v.topicOptions}"
+                                           onchange="{!c.updateSelectedTopics}"/>
+                </lightning:accordionSection>
+                <lightning:accordionSection name="SubtopicSelection" label="Subtopic Selection">
+                    <lightning:dualListbox name="subtopics"
+                                           label="Subtopics"
+                                           sourceLabel="Available"
+                                           selectedLabel="Covered"
+                                           options="{!v.subtopicOptions}"
+                                           onchange="{!c.updateSelectedSubtopics}"/>
+                </lightning:accordionSection>
+            </lightning:accordion>
+            
+            <aura:set attribute="footer">
+                footer 
+            </aura:set>
+        </lightning:card>
+    </div>
+    
+</aura:component>
