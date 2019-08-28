@@ -1,4 +1,4 @@
-<aura:component controller="NewWeekFormController" implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction" access="global" >
+<aura:component controller="NewWeekFormController" implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction,force:appHostable" access="global" >
     <!--Attributes-->
     <aura:attribute name="newWeek" type="Week__c" default="{ 'sobjectType': 'Week__c',
                                                            'Week_Number__c' : '',
@@ -13,10 +13,11 @@
     <aura:handler name="init" value="{!this}" action="{!c.onInit}"/>
     
     <!--Displayed Markup-->
+    <lightning:navigation aura:id="navService" />
     <div>
         <lightning:card title="New Week">
             <aura:set attribute="actions">
-                <lightning:button label="Create" />
+                <lightning:button label="Create" onclick="{!c.createNewWeekAndRelatedRecords}"/>
                 <lightning:buttonMenu aura:id="btnMenu" onselect="{!c.handleMenuSelect}" alternativeText="More Actions">
                     <lightning:menuItem value="ClearForm" label="Clear Form"/>
                     <lightning:menuItem value="Cancel" label="Cancel"/>
@@ -28,7 +29,7 @@
                         <lightning:outputField fieldName="Name"/>
                         <lightning:outputField fieldName="Start_Date__c"/>
                     </lightning:recordViewForm>
-                    <lightning:input type="Number" label="Week Number" value="{!v.newWeek.Week_Number__c}" onchange="{!c.changeToTopicsStep}"/>
+                    <lightning:input type="Number" label="Week Number" value="{!v.newWeek.Week_Number__c}"/>
                 </lightning:accordionSection>
                 <lightning:accordionSection name="TopicSelection" label="Topic Selection">
                     <lightning:dualListbox name="topics"
